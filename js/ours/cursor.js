@@ -47,11 +47,11 @@ function processEvent(e) {
   // catches and processes the mousemove event
   if (window.event) {
     // for IE
-    storage[0] = window.event.y + standardbody.scrollTop - 3
-    storage[1] = window.event.x + standardbody.scrollLeft - 1
+    storage[0] = window.event.y + standardbody.scrollTop + 10
+    storage[1] = window.event.x + standardbody.scrollLeft + 10
   } else {
-    storage[0] = e.pageY
-    storage[1] = e.pageX
+    storage[0] = e.pageY + 12
+    storage[1] = e.pageX + 12
   }
 }
 
