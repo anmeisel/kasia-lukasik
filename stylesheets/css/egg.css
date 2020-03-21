@@ -1,0 +1,145 @@
+@font-face {
+	font-family: "domaine-italic";
+	src: url("../../fonts/Domaine-text/DomaineText-RegularItalic.woff") format("woff"),
+		url("../../fonts/Domaine-text/DomaineText-RegularItalic.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "domaine";
+	src: url("../../fonts/Domaine-text/DomaineText-Regular.woff") format("woff"), url("../../fonts/Domaine-text/DomaineText-Regular.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "gt";
+	src: url("../../fonts/GT-America/GT-America-Regular.woff") format("woff"), url("../../fonts/GT-America/GT-America-Regular.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "gt-light";
+	src: url("../../fonts/GT-America/GT-America-Light.woff") format("woff"), url("../../fonts/GT-America/GT-America-Light.woff2") format("woff2");
+}
+
+body {
+	width: 100%;
+	margin: 0px;
+}
+
+a {
+	color: white;
+}
+
+.all,
+.footer {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-moz-font-feature-settings: "kern" 1, "dlig" 1;
+	-ms-font-feature-settings: "kern" 1, "dlig" 1;
+	-o-font-feature-settings: "kern" 1, "dlig" 1;
+	-webkit-font-feature-settings: "kern" 1, "dlig" 1;
+	font-feature-settings: "kern" 1, "dlig" 1;
+	font-kerning: normal;
+	font-family: "gt-light";
+	color: white;
+	top: 0px;
+	position: absolute;
+	margin: 0px;
+	height: auto;
+}
+
+.footer {
+	bottom: 10px;
+	margin: 0px;
+	width: 100%;
+	top: initial;
+	text-align: center;
+	display: inline-block;
+}
+
+.arena-block,
+.socials {
+	margin-left: 5vw;
+}
+
+.header {
+	font-family: "domaine-italic";
+	color: transparent;
+	font-size: 5em;
+	margin: 5vw 0 0 5vw;
+	display: inline-block;
+	width: auto;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: white;
+}
+
+.header:hover {
+	color: white;
+}
+
+.background {
+	position: relative;
+	width: 100%;
+}
+
+.background-image {
+	position: relative;
+	z-index: -1;
+	top: 0px;
+}
+
+.background-image img {
+	width: 100%;
+	top: 0px;
+	height: auto;
+	margin-bottom: -5px;
+}
+
+.monogamy p {
+	width: 70vw;
+	margin-top: 5vw;
+	font-size: 1.5em;
+}
+
+a {
+	font-size: 1.5em;
+	text-decoration: none;
+}
+
+#arena-block-title {
+	font-family: "domaine";
+	font-size: 3em;
+}
+
+.link,
+.triangle {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.triangle {
+	font-family: "domaine";
+}
+
+.double-em {
+	letter-spacing: -0.2rem;
+	font-size: 1.5em;
+	margin-right: -0.2rem;
+}
+
+.loading {
+	font-size: 5em;
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+}
+
+/*#el {
+	position: absolute;
+	width: 13px;
+	height: 20px;
+	background-image: url(/assets/mouse-cursor-png-cursor-arrow-png-picture-1602.png);
+	background-repeat: none;
+	background-size: 13px;
+	filter: invert(1);
+}*/
