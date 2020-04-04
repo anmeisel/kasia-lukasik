@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 const express = require('express')
 const compression = require('compression')
 const mustacheExpress = require('mustache-express')
@@ -18,7 +17,6 @@ if (environment === 'now') {
 } else {
   cache = yaml.safeLoad(fs.readFileSync('./api/config.yaml', 'utf8'))
 }
-const channelCache = require('./api/blog.json')
 
 const app = express()
 
@@ -37,7 +35,6 @@ app.set('view engine', 'html')
 app.set('views', `${__dirname}/views`)
 
 app.get('/', async function(req, res) {
-  const view = req.query.view
   const arena = new Arena({ accessToken: process.env.arenaPAT })
   arena
     .channel(process.env.arenaChannel)
@@ -52,6 +49,7 @@ app.get('/', async function(req, res) {
       const config = yaml.safeLoad(channel.metadata.description) // get our site description from our are.na channel description - since it is loaded in as yaml, we can access it's values with `config.key`, ex: for title, we can use `config.details.title`
       const contents = channel.contents // clean up the results a little bit, and make the channel's contents available as a constant, `contents`
 
+      // res.send(channel) // uncomment this to see the js object that gets passed to the render
       res.render('index.html', {
         static_url: cdn,
         config,
