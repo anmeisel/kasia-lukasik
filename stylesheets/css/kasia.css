@@ -151,6 +151,13 @@ a {
 	left: 0;
 	position: fixed;
 	z-index: 99;
-	font-size: 5em;
+	background-color: #afafaf;
+	color: #c8f540;
+	font-size: 2rem;
+	font-family: "lunchtype-22r", lunchtype-22r, sans-serif;
 	cursor: auto;
+}
+#loading img {
+	height: 2em;
+	width: auto;
 }
