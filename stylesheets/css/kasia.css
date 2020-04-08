@@ -29,77 +29,48 @@ a {
 	color: white;
 }
 
-.all,
-.footer {
-	-ms-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	-moz-font-feature-settings: "kern" 1, "dlig" 1;
-	-ms-font-feature-settings: "kern" 1, "dlig" 1;
-	-o-font-feature-settings: "kern" 1, "dlig" 1;
-	-webkit-font-feature-settings: "kern" 1, "dlig" 1;
-	font-feature-settings: "kern" 1, "dlig" 1;
-	font-kerning: normal;
-	font-family: "gt-light";
-	color: white;
-	top: 0px;
-	position: absolute;
-	margin: 0px;
-	height: auto;
-}
-
-.footer {
-	bottom: 10px;
-	margin: 0px;
-	width: 100%;
-	top: initial;
-	text-align: center;
-	display: inline-block;
-}
-
-.arena-block,
-.socials {
-	margin-left: 5vw;
-}
-
-.header {
+.header a {
 	font-family: "domaine-italic";
 	color: transparent;
 	font-size: 5em;
-	margin: 5vw 0 0 5vw;
+	line-height: 1em;
+	margin: 5vw 0 2vw 5vw;
 	display: inline-block;
 	width: auto;
 	-webkit-text-stroke-width: 1px;
 	-webkit-text-stroke-color: white;
 }
 
-.header:hover {
+.header a:hover {
 	color: white;
 }
 
-.background {
-	position: relative;
-	width: 100%;
+.subheader {
+	margin-bottom: 5vw;
 }
 
-.background-image {
-	position: relative;
-	z-index: -1;
-	top: 0px;
-}
-
-.background-image img {
+img.background-image {
+	position: -webkit-sticky;
+	position: sticky;
 	width: 100%;
 	top: 0px;
 	height: auto;
+	z-index: -1;
 	margin-bottom: -5px;
 }
 
+.monogamy {
+	margin-top: 10vw;
+}
+
 .monogamy p {
-	width: 70vw;
-	margin-top: 5vw;
+	width: 50%;
+	margin-bottom: 2vw;
 	font-size: 1.5em;
+}
+
+.monogamy a {
+	font-size: 1.5rem;
 }
 
 a {
@@ -107,7 +78,8 @@ a {
 	text-decoration: none;
 }
 
-#arena-block-title {
+.arena-block-title,
+.subheader {
 	font-family: "domaine";
 	font-size: 3em;
 }
@@ -125,6 +97,54 @@ a {
 
 .triangle img {
 	width: 100%;
+}
+
+.all {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-moz-font-feature-settings: "kern" 1, "dlig" 1;
+	-ms-font-feature-settings: "kern" 1, "dlig" 1;
+	-o-font-feature-settings: "kern" 1, "dlig" 1;
+	-webkit-font-feature-settings: "kern" 1, "dlig" 1;
+	font-feature-settings: "kern" 1, "dlig" 1;
+	font-kerning: normal;
+	font-family: "gt-light";
+	color: white;
+	top: 0px;
+	margin: 0px;
+	height: auto;
+	margin-top: -140vw;
+}
+
+.footer {
+	bottom: 10px;
+	margin: 0px;
+	width: 100%;
+	top: initial;
+	text-align: center;
+	display: inline-block;
+	/*position: absolute;*/
+}
+
+.arena-block-title,
+.arena-block-metadata,
+.socials,
+.subheader,
+.embed-block,
+.video-block,
+.image-block {
+	margin-left: 5vw;
+}
+
+.arena-block-title {
+	margin-top: 5vw;
+}
+
+.socials {
+	margin-top: 64.5vh;
+	position: absolute;
 }
 
 #loading {
