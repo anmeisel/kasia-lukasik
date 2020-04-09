@@ -162,6 +162,12 @@ blockquote p {
 	margin-left: 210px;
 }
 
+/*blockquote br {
+	content: "";
+	margin: 1em;
+	display: block;
+}*/
+
 #loading {
 	width: 100vw;
 	height: 100vh;
