@@ -1,10 +1,3 @@
-function socialLinks() {
-	var links = document.links
-	for (var i = 0; i < links.length; i++) {
-		links[i].target = '_blank'
-	}
-}
-
 var colour = '#FFFFFF'
 var sparkles = 120
 
