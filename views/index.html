@@ -5,17 +5,11 @@
 		{{> components/head }}
 	</head>
 	<body>
-		<!-- {{> components/loading }} -->
+		{{> components/loading }}
 		<img class="background-image" src="../assets/image-website.jpg" />
 
 		<div class="all">
-			{{> components/nav }}
-			<!-- <div class="socials">
-				<div class="triangle"><img src="../assets/arrow-01.png"/></div>
-				<br /><br />
-				<div class="triangle"><img src="../assets/arrow-01.png"/></div>
-			</div> -->
-			{{> arena }}
+			{{> components/nav }} {{> arena }}
 			<div class="footer">{{config.details.footer}}</div>
 		</div>
 		{{> components/body-end }}

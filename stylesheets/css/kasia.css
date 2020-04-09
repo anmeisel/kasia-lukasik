@@ -147,6 +147,21 @@ a {
 	position: absolute;
 }
 
+blockquote {
+	background-image: url("../../assets/arrow-01-mid.png");
+	background-size: 200px;
+	background-repeat-x: no-repeat;
+	margin-left: 0px;
+}
+
+em {
+	font-family: "domaine";
+}
+
+blockquote p {
+	margin-left: 210px;
+}
+
 #loading {
 	width: 100vw;
 	height: 100vh;
