@@ -206,6 +206,9 @@ blockquote p {
 }
 
 @media (max-width: 650px) {
+	.image-block img {
+		width: 75%;
+	}
 	img.background-image {
 		position: fixed;
 		height: 100%;
