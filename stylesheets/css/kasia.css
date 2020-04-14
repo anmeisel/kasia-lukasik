@@ -205,32 +205,26 @@ blockquote p {
 	width: auto;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 560px) {
+	* {
+		max-width: 100%;
+	}
 	img.background-image {
-		position: fixed;
-		height: 100%;
-		width: auto;
-		overflow-x: hidden;
+		display: none;
+	}
+	body {
+		background: url("../../assets/image-website.jpg") no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
 	}
 	.background-image {
 		max-width: 100%;
 		overflow-x: hidden;
 	}
-}
-
-@media (max-width: 650px) {
 	.image-block img {
 		width: 75%;
-	}
-	img.background-image {
-		position: fixed;
-		width: 100%;
-		height: auto;
-		overflow-x: hidden;
-	}
-	.background-image {
-		max-width: 100%;
-		overflow-x: hidden;
 	}
 	.all {
 		margin-top: 20px;
@@ -244,9 +238,6 @@ blockquote p {
 	}
 	blockquote p {
 		margin-left: 80px;
-	}
-	* {
-		max-width: 100%;
 	}
 }
 
