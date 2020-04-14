@@ -204,3 +204,34 @@ blockquote p {
 	height: 2em;
 	width: auto;
 }
+
+@media (max-width: 650px) {
+	img.background-image {
+		position: fixed;
+		height: 100%;
+		width: auto;
+	}
+	.all {
+		margin-top: 20px;
+	}
+	.monogamy p {
+		width: 80%;
+	}
+	blockquote {
+		background-image: url("../../assets/arrow-01-mi-cropped.png");
+		background-size: 75px;
+	}
+	blockquote p {
+		margin-left: 80px;
+	}
+}
+
+@media (max-width: 450px) {
+	blockquote {
+		background-image: none;
+		background-size: 0px;
+	}
+	blockquote p {
+		margin-left: 0px;
+	}
+}
