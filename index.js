@@ -35,6 +35,7 @@ app.set('view engine', 'html')
 app.set('views', `${__dirname}/views`)
 
 app.get('/', async function(req, res) {
+  const view = req.query.view
   const arena = new Arena({ accessToken: process.env.arenaPAT })
   arena
     .channel(process.env.arenaChannel)
@@ -43,19 +44,37 @@ app.get('/', async function(req, res) {
       per: 64, // get 64 items per call (max: 100) - play around w this for performance
       direction: 'desc' // ask API v nicely to sort blocks by most recent
     })
+
     .then(channel => {
       // fetch our whole are.na channel as `channel`
 
       const config = yaml.safeLoad(channel.metadata.description) // get our site description from our are.na channel description - since it is loaded in as yaml, we can access it's values with `config.key`, ex: for title, we can use `config.details.title`
       const contents = channel.contents // clean up the results a little bit, and make the channel's contents available as a constant, `contents`
 
-      // res.send(channel) // uncomment this to see the js object that gets passed to the render
-      res.render('index.html', {
-        static_url: cdn,
-        config,
-        arena: contents // pass our are.na channel contents into the render for use w mustache.js by using `{{arena}}` - see views/arena.html
-      })
+      const bio = contents.pop() // pop last block (in this case, "bio"), out of array, and then pass it to the render below
+
+      const contact = contents.pop(1) // pop last block (in this case, "contact"), out of array, and then pass it to the render below
+
+      if (view === 'channel') {
+        // append `?view=channel` to the end of your URL to see "channel" as JSON
+        res.send(contents)
+      } else if (view === 'bio') {
+        // append `?view=bio` to the end of your URL to see "bio" as JSON
+        res.send(bio)
+      } else if (view === 'contact') {
+        // append `?view=contact` to the end of your URL to see "contact" as JSON
+        res.send(contact)
+      } else {
+        res.render('index.html', {
+          static_url: cdn,
+          config,
+          bio,
+          contact,
+          arena: contents // pass our are.na channel contents into the render for use w mustache.js by using `{{arena}}` - see views/arena.html
+        })
+      }
     })
+
     .catch(err => {
       // handle errors
 

@@ -1,4 +1,36 @@
 <div class="arena-block" id="section_{{ id }}">
+	<div class="arena-block-metadata">
+		{{# bio }} 
+		<span class="description">{{# description_html }}</span>
+			{{{ description_html }}}
+		{{/ description_html }} 
+		{{# content_html }}
+			<span class="monogamy">{{{ content_html }}}</span>
+		{{/ content_html }} {{/ bio }}
+	</div>
+
+	<div class="socials">
+		<div class="arrows">
+			<div class="arrow">
+				<span class="double-em">—————————&nbsp;</span>
+				<div class="triangle">&#9654; </div>
+			</div>
+			<div class="arrow">
+				<span class="double-em">—————————&nbsp;</span>
+				<div class="triangle">&#9654; </div>
+			</div>
+		</div>
+		<div class="contact-words">
+			{{# contact }} 
+			{{# description_html }}
+				{{{ description_html }}}
+			{{/ description_html }} 
+			{{# content_html }}
+				{{{ content_html }}}
+			{{/ content_html }} {{/ contact }}
+		</div>
+	</div>
+
 	{{# arena }}
 	<div class="arena-block-title">{{ title }} </div>
 	<div class="arena-block-metadata">
@@ -38,7 +70,7 @@
 
 	{{/ arena }}
 
-	<div class="socials">
+	<!-- <div class="socials">
 		<span class="double-em">—————————&nbsp;</span>
 		<div class="triangle">&#9654; </div>
 		<a href="{{config.details.email_link}}"> <div class="link"> {{config.details.email}}</div> </a><br /><br />
@@ -47,6 +79,8 @@
 		<a href="{{config.details.instagram_link}}">
 			<div class="link"> {{config.details.instagram}}</div>
 		</a><br><br><br>
-	</div>
+	</div> -->
+	
 </div>
+
 

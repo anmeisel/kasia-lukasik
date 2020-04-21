@@ -102,6 +102,26 @@ a,
 	font-size: 3em;
 }
 
+.arrow {
+	display: block;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	vertical-align: middle;
+}
+
+.arrow {
+	margin-top: 13px;
+	margin-bottom: 13px;
+}
+
+.arrows,
+.contact-words {
+	display: inline-block;
+	vertical-align: top;
+}
+
 .link {
 	display: inline-block;
 	margin-right: 10px;
@@ -111,12 +131,12 @@ a,
 	display: inline-block;
 	font-family: "domaine";
 	margin-left: -10px;
-	font-size: 1.325em;
+	font-size: 1.2em;
 }
 
 .double-em {
 	letter-spacing: -0.2rem;
-	font-size: 1.9em;
+	font-size: 1.7em;
 	margin-right: -0.2rem;
 }
 
