@@ -87,15 +87,12 @@ img.background-image {
 .monogamy p {
 	width: 50%;
 	margin-bottom: 2vw;
-	font-size: 1.5em;
 }
 
-.monogamy a {
+a,
+.monogamy a,
+.monogamy p {
 	font-size: 1.5rem;
-}
-
-a {
-	font-size: 1.5em;
 	text-decoration: none;
 }
 
@@ -153,6 +150,10 @@ a {
 	top: initial;
 	text-align: center;
 	display: inline-block;
+}
+
+.footer2 {
+	display: none;
 }
 
 .arena-block-title,
@@ -217,32 +218,45 @@ em {
 }
 
 @media (max-width: 560px) {
-	* {
-		max-width: 100%;
+	a,
+	.monogamy a,
+	.monogamy p {
+		font-size: 1.2rem;
+		text-decoration: none;
 	}
-	img.background-image {
-		visibility: hidden;
-	}
-	body {
-		background: url("../../assets/image-website.jpg") no-repeat center center fixed;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-		background-position: left;
-	}
-	.background-image {
-		max-width: 100%;
-		overflow-x: hidden;
-	}
-	.image-block img {
-		width: 75%;
-	}
-	.all {
-		margin-top: 20px;
-	}
+
 	.monogamy p {
 		width: 75%;
+	}
+
+	img.background-image {
+		height: 100vh;
+		position: fixed;
+		width: auto;
+	}
+	.all {
+		margin-top: 40px;
+	}
+
+	.footer {
+		display: none;
+	}
+
+	.footer2 {
+		display: block;
+		text-align: center;
+		-ms-text-size-adjust: 100%;
+		-webkit-text-size-adjust: 100%;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		-moz-font-feature-settings: "kern" 1, "dlig" 1;
+		-ms-font-feature-settings: "kern" 1, "dlig" 1;
+		-o-font-feature-settings: "kern" 1, "dlig" 1;
+		-webkit-font-feature-settings: "kern" 1, "dlig" 1;
+		font-feature-settings: "kern" 1, "dlig" 1;
+		font-kerning: normal;
+		font-family: "gt-light";
+		color: white;
 	}
 }
 
