@@ -112,8 +112,8 @@ a,
 }
 
 .arrow {
-	margin-top: 13px;
-	margin-bottom: 13px;
+	/*	margin-top: 13px;
+	margin-bottom: 13px;*/
 }
 
 .arrows,
@@ -127,11 +127,20 @@ a,
 	margin-right: 10px;
 }
 
-.triangle {
+/*.triangle {
 	display: inline-block;
 	font-family: "domaine";
 	margin-left: -10px;
 	font-size: 1.2em;
+}*/
+
+.triangle {
+	display: block;
+	font-family: "domaine";
+	margin-right: 5px;
+	margin-top: 5px;
+	font-size: 2.3rem;
+	margin-bottom: -13px;
 }
 
 .double-em {
