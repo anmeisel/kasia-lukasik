@@ -138,9 +138,9 @@ a,
 	display: block;
 	font-family: "domaine";
 	margin-right: 5px;
-	margin-top: 5px;
+	margin-top: 6px;
 	font-size: 2.3rem;
-	margin-bottom: -13px;
+	margin-bottom: -15px;
 }
 
 .double-em {
@@ -237,9 +237,9 @@ em {
 }
 
 @media (max-width: 815px) {
-	.triangle {
+	/*.triangle {
 		font-size: 0.7em;
-	}
+	}*/
 
 	.double-em {
 		font-size: 1em;
@@ -290,9 +290,9 @@ em {
 }
 
 @media (max-width: 450px) {
-	.triangle {
+	/*.triangle {
 		display: none;
-	}
+	}*/
 
 	.double-em {
 		display: none;
