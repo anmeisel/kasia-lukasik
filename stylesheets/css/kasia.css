@@ -241,6 +241,10 @@ em {
 		font-size: 0.7em;
 	}*/
 
+	.triangle {
+		margin-top: 0px;
+	}
+
 	.double-em {
 		font-size: 1em;
 	}
