@@ -102,6 +102,10 @@ a,
 	font-size: 3em;
 }
 
+.contact-words p strong {
+	font-size: 1.6rem;
+}
+
 .arrow {
 	display: block;
 	margin-block-start: 1em;
