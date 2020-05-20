@@ -19,6 +19,11 @@
 	src: url("../../fonts/GT-America/GT-America-Light.woff") format("woff"), url("../../fonts/GT-America/GT-America-Light.woff2") format("woff2");
 }
 
+@font-face {
+	font-family: "gt-light-italic";
+	src: url("../../fonts/GT-America/GT-America-Light-Italic.woff") format("woff"), url("../../fonts/GT-America/GT-America-Light.woff2") format("woff2");
+}
+
 body {
 	background-color: #afafaf;
 	width: 100%;
@@ -204,7 +209,7 @@ a,
 }
 
 em {
-	font-family: "domaine";
+	font-family: "gt-light-italic";
 }
 
 #loading {
